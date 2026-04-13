@@ -7,7 +7,7 @@
 - `middleware.mjs`
   `/rance-world-note/*` と `/assets/*` に BASIC 認証をかけ、Wiki の見た目URLを実ファイルへ内部リライトします。
 - `vercel.json`
-  Vercel を `Other` として扱い、`public/` を配信物として使うよう固定しています。
+  Vercel の Framework Preset を `Other` 扱いにし、`public/` を配信物として使うよう固定しています。
 - `scripts/prepare_vercel_static.mjs`
   デプロイ前に `rance-world-note/` を `public/rance-world-note/` へコピーします。
 - `vercel-routes.json`
@@ -27,7 +27,7 @@
 3. 環境変数 `BASIC_AUTH_USERNAME` と `BASIC_AUTH_PASSWORD` を Preview / Production に設定
 4. デプロイ
 
-`vercel.json` で `framework: "other"`、`buildCommand: "npm run build"`、`outputDirectory: "public"` を固定しているので、追加設定は基本不要です。
+`vercel.json` で `framework: null`、`buildCommand: "npm run build"`、`outputDirectory: "public"` を固定しているので、追加設定は基本不要です。
 
 ## ローカル確認
 
