@@ -4,7 +4,7 @@
 
 ## 追加した内容
 
-- `middleware.mjs`
+- `middleware.js`
   `/rance-world-note/*` と `/assets/*` に BASIC 認証をかけ、Wiki の見た目URLを実ファイルへ内部リライトします。
 - `vercel.json`
   Vercel の Framework Preset を `Other` 扱いにし、`public/` を配信物として使うよう固定しています。

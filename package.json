@@ -1,6 +1,7 @@
 {
   "name": "rancewiki-mirror",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "node scripts/prepare_vercel_static.mjs",
     "prepare:vercel": "node scripts/prepare_vercel_static.mjs",
