@@ -1,0 +1,12 @@
+{
+  "name": "rancewiki-mirror",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/prepare_vercel_static.mjs",
+    "prepare:vercel": "node scripts/prepare_vercel_static.mjs",
+    "serve:local": "python scripts/serve_rance_mirror.py"
+  },
+  "dependencies": {
+    "@vercel/functions": "^3.4.3"
+  }
+}
